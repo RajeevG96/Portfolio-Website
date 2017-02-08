@@ -1,0 +1,158 @@
+/*
+FONTS
+
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+
+/*
+COLOURS
+
+Look for PDF in portfolio assets folder
+*/
+
+/*Typography*/
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Raleway', sans-serif; 
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+li {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #281d10;
+}
+
+/*Toolbox*/
+
+/*Apply vert-center to vertically center an elements content (Parent element must have display:flex)*/
+
+.vert-center {
+     align-items: center;
+     justify-content: center;
+}
+
+html,body {
+    height: 100%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.flex {
+    display: flex;
+}
+
+/*Navigation*/
+
+.sidebar {
+     position: fixed;
+     width: 20%;
+     height: 100%;
+     background: #c5aa90;
+    
+}
+
+.nav-container {
+    color: #281d10;
+}
+
+nav ul {
+    list-style-type: none;
+    border-left: 2px solid #281d10;
+}
+
+nav ul li {
+    margin-bottom: 0.7em;
+}
+
+/*Whole page modifiers*/
+
+.content {
+     margin-left: 20%;
+     height: 100%;
+     width: 80%;
+     position: relative;
+     overflow: auto;
+     z-index: 1;
+     background: #c5aa90;
+     display: flex;
+ }
+
+/*1st Section (Hero Image)*/
+
+.one {
+    background-image: url(../img/bg.jpg);
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.one h1 {
+    color: #c5aa90;
+    width: 44%;
+}
+
+/*2nd Section (About Me)*/
+
+.two {
+    background: #ac8a62;
+}
+
+/*3rd Section (Portfolio)*/
+
+.three {
+    background: #867864;
+}
+
+/*4th Section (Contact)*/
+
+.four {
+    background: #c5aa90;
+    flex-direction: column-reverse;
+}
+
+.footer {
+    width: 100%;
+    background: #ac8a62;
+    height: 15%;
+}
+
+/*Media Queries*/
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 1024px){
+      
+      .sidebar{
+            width: 100%;
+            height: 30%;
+            z-index: 1;
+      }
+       
+      .content {
+          margin-left: 0;
+          width: 100%;
+          z-index: 0;
+          top: 30%;
+          height: 70%;
+      }
+      
+      .one h1 {
+          font-size: 1em;
+          width: 71%;
+      }
+}
