@@ -61,26 +61,48 @@ html {
     display: flex;
 }
 
-/*Navigation*/
+/*Whole page modifiers*/
+
+.content {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: auto;
+    z-index: 1;
+    background: #c5aa90;
+    display: flex;
+   
+ }
+
+/********************************************* Navigation*/
 
 .sidebar {
-    position: fixed;
+    flex-direction: column;
     width: 100%;
-    height: 25%;
+    height: 11%;
     background: #edd9c0;
     z-index: 999;
     top: 0;
+    padding-top: 3%;
     
 }
 
 .nav-container {
     color: #281d10;
+    display: none;
+    position: absolute;
+    z-index: 99;
+    margin: 0 auto;
+    width: 100%;
+    background: rgba(237, 217, 192, 0.56);
 }
 
-.nav-container h1 {
+.sidebar h1 {
     font-size: 2em;
     text-align: center;
     margin: 0;
+    height: 31%;
+    margin: 0 auto;
 }
 
 ul {
@@ -93,19 +115,19 @@ nav ul li {
     margin-bottom: 0.7em;
 }
 
-/*Whole page modifiers*/
+.fa-level-up {
+    display: none;
+}
 
-.content {
-    height: 75%;
-    width: 100%;
-    position: relative;
-    overflow: auto;
-    z-index: 1;
-    background: #c5aa90;
-    display: flex;
- }
+@media (min-width: 576px) {
+    
+    .sidebar {
+        padding-bottom: 2%;
+    }
+    
+}
 
-/*1st Section (Hero Image)*/
+/********************************************* 1st Section (Hero Image)*/
 
 .one {
     background-image: url(../img/bg.jpg);
@@ -113,13 +135,16 @@ nav ul li {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 58%;
+    background-attachment: fixed; 
 }
 
 .one h1 {
     color: #edd9c0;
-    width: 44%;
+    width: 51%;
+    font-size: 1.4em;
 }
+
+@media (min-width: 576px) { ... }
 
 /*2nd Section (About Me)*/
 
@@ -131,13 +156,40 @@ nav ul li {
 
 .two div {
     width: 70%;
+    height: 45%;
+}
+
+.two h1{
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+.two p {
+    font-size: 1em;
+    text-align: center;
+    line-height: 1.7em;
+}
+
+.two ul li {
+    text-align: left;
+}
+
+@media (min-width: 576px) {
+    
+    .two p {
+        width: 50%;
+        margin: 0 auto;
+        padding-top: 5%;
+    }
+    
+    .two ul li {
+        text-align: center;
+    }
+    
 }
 
 
-
-
-
-/*3rd Section (Portfolio)*/
+/********************************************* 3rd Section (Portfolio)*/
 
 .three {
     background: #a8b6bf;
@@ -146,17 +198,43 @@ nav ul li {
 }
 
 .three div {
-    height: 50%;
+    height: 45%;
     padding: 1%;
-    width: 36%;
+    width: 100%;
 }
+
 
 .three img {
-    max-width: 100%;
-    height: 61%;
+    width: 98%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    max-height: 77%;
+    max-width: 356px;
+    
 }
 
-/*4th Section (Contact)*/
+.three p, h3 {
+    text-align: center;
+}
+
+.three a {
+    width: 42%;
+    text-align: center;
+    padding-top: 1.3%;
+}
+
+/*Extra Portfolio Content*/
+
+#primaryContent {
+    height: 100%;
+}
+
+#extraContent {
+    display: none;
+    height: 100%;
+}
+/********************************************* 4th Section (Contact)*/
 
 .four {
     background: #edd9c0;

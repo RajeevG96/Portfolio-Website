@@ -10,6 +10,8 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
+        
+        <script src="https://use.fontawesome.com/37d629f195.js"></script>
         <link rel="stylesheet" href="css/normalize.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
@@ -21,9 +23,11 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div class="sidebar vert-center flex">
-            <div class="nav-container">
-                <h1><a href="#home">Rajeev Gill</a></h1>
+        <div class="sidebar flex">
+            <h1><a class="dropdown">Rajeev Gill <i class="fa fa-level-down" aria-hidden="true"></i><i class="fa fa-level-up" aria-hidden="true"></i></a></h1>
+        </div>
+        
+        <div class="nav-container">
                 <nav>
                     <ul>
                         <li><a href="#aboutMe">About Me</a></li>
@@ -32,7 +36,6 @@
                     </ul>
                 </nav>
             </div>
-        </div>
 
         <div class="content one vert-center" id="home">
             <h1>Hello my name is Rajeev Gill I am a freelance web designer based in London.</h1>
@@ -42,9 +45,13 @@
             
              <div class="about">
                   <h1>About Me</h1>
+<!--
                   <p>I am currently a web designer & student at Ravensbourne College of Art and Design studying Web Media Production BA (Hons). I am an energetic and enterprising individual with a strong focus
                   on producing designs and content for the web.
                   </p>
+-->
+                 <p>A passionate and outgoing designer with a focus on UX and Web Design. I create cross-platform experiences, websites and graphics for small businesses and individuals</p>
+                 
               </div>
               
               <div class="skills">
@@ -65,32 +72,34 @@
         
         <div class="content three vert-center" id="portfolio">
             
-            <div class="vert-center portfolio-one">
-                <h3>App design:</h3>
-                   <p>Prototype app interface I made using HTML, CSS and Javascript.</p>
-                <img src="img/portfolio/Locations1.jpg"> 
+            <div id="primaryContent">    
+                <div class="portfolio-one">
+                    <h3>App design:</h3>
+                       <p>Prototype app interface I made using HTML, CSS and Javascript.</p>
+                    <img src="img/portfolio/Locations1.jpg">
+                </div>    
+                <div class="portfolio-two">
+                    <h3>Web Design:</h3>
+                        <p>Landing page for our university course.</p>
+                    <img src="img/portfolio/WMedia1.jpg"> 
+                </div>
+                <a id="seeMore"><h1>See more work <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></h1></a>
             </div>    
             
-            
-            <div class="vert-center portfolio-two">
-                <h3>Web Design:</h3>
-                    <p>Landing page for our university course.</p>
-                <img src="img/portfolio/WMedia1.jpg"> 
-            </div>
-            
-            <div class="vert-center portfolio-three">
-                <h3>Web Design:</h3>
-                    <p>Our Space. I helped develop this website. as part of a team. It is a landing page for our university course.</p>
-                <img src="img/portfolio/WMedia1.jpg"> 
-            </div>
-            
-            <div class="vert-center portfolio-four">
-                <h3>Web Design:</h3>
-                    <p>Our Space. I helped develop this website as part of a team. It is a landing page for our university course.</p>
-                <img src="img/portfolio/WMedia1.jpg"> 
-            </div>
-            
-            <a href="#seeMore"><h1>See more work</h1></a>
+            <div id="extraContent">  
+                <div class="portfolio-three">
+                    <h3>2App design:</h3>
+                       <p>Prototype app interface I made using HTML, CSS and Javascript.</p>
+                    <img src="img/portfolio/Locations1.jpg">
+                </div>    
+                <div class="portfolio-four">
+                    <h3>2Web Design:</h3>
+                        <p>Landing page for our university course.</p>
+                    <img src="img/portfolio/WMedia1.jpg"> 
+                </div>
+                <a id="back"><h1><i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
+                Go Back to Portfolio</h1></a>
+            </div>      
             
         </div>
         
