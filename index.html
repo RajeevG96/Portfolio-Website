@@ -24,14 +24,16 @@
         <![endif]-->
 
         <div class="sidebar flex vert-center">
-            <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">Rajeev Gill <i class="fa fa-caret-square-o-down dropbtn" aria-hidden="true"></i></button>
-              <div id="myDropdown" class="dropdown-content">
-                <a href="#aboutMe">About Me</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#contact">Contact</a>
-              </div>
-            </div>
+             <div class="nav-container">
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Rajeev Gill <i class="fa fa-caret-square-o-down dropbtn" aria-hidden="true"></i></button>
+                  <div id="myDropdown" class="dropdown-content">
+                    <a href="#aboutMe">About Me</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact">Contact</a>
+                  </div>
+                </div>
+             </div> 
         </div>
         
 <!--
@@ -116,9 +118,26 @@
         
         <div class="content four vert-center" id="contact">
             <div class="hello vert-center">
-                <h1>Say Hello!</h1>
+                <a href="mailto:rajeev.sgill@gmail.com"><h1>Say Hello!</h1></a>
             </div>
+            
+            <div class="sub-cta"> 
+                <div class="sub-hello vert-center flex">
+                    <p>LinkedIn</p>
+                    <a href="https://www.linkedin.com/in/rajeev-gill-0b2457109"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </div>
+                <div class="sub-hello vert-center flex">
+                    <p>My CV</p>
+                    <a href="cv.pdf"><i class="fa fa-address-card" aria-hidden="true"></i></a>
+                </div>
+                <div class="sub-hello vert-center flex">
+                    <p>My Blog</p>
+                    <a href="http://rajeevxgill.co.nf/my-blogs/"><i class="fa fa-rss" aria-hidden="true"></i></a>
+                </div>
+            </div>   
+        
         </div>
+        
         
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
