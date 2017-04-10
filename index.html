@@ -23,19 +23,30 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div class="sidebar flex">
-            <h1 vert-center><a class="dropdown">Rajeev Gill <i class="fa fa-level-down" aria-hidden="true"></i><i class="fa fa-level-up" aria-hidden="true"></i></a></h1>
+        <div class="sidebar flex vert-center">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Rajeev Gill <i class="fa fa-caret-square-o-down dropbtn" aria-hidden="true"></i></button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#aboutMe">About Me</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+              </div>
+            </div>
         </div>
         
-        <div class="nav-container">
-                <nav>
+<!--
+        <div class="dropdown">  
+            <div class="nav-container" id="myDropdown">
+                <nav id="myDropdown" class="dropdown-content">
                     <ul>
                         <li><a href="#aboutMe">About Me</a></li>
                         <li><a href="#portfolio">My Portfolio</a></li>
-                        <li><a href="#contactMe">Contact Me</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
                     </ul>
                 </nav>
             </div>
+        </div>  
+-->
 
         <div class="content one vert-center" id="home">
             <h1>Hello my name is Rajeev Gill I am a freelance web designer based in London.</h1>
@@ -86,7 +97,7 @@
                 <a id="seeMore"><h1>See more work <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></h1></a>
             </div>    
             
-            <div id="extraContent">  
+            <!-- <div id="extraContent">  
                 <div class="portfolio-three">
                     <h3>2App design:</h3>
                        <p>Prototype app interface I made using HTML, CSS and Javascript.</p>
@@ -99,7 +110,7 @@
                 </div>
                 <a id="back"><h1><i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
                 Go Back to Portfolio</h1></a>
-            </div>      
+            </div>   -->    
             
         </div>
         

@@ -74,19 +74,80 @@ html {
    
  }
 
-/********************************************* Navigation*/
+/********************************************* Navigation/Sidebar*/
 
+/*Dropdown menu*/
+
+/* Dropdown Button */
+.dropbtn {
+    background: #edd9c0;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+/*
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #b0b0b0;
+}
+*/
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    background: #edd9c0;
+}
+
+.dropdown button {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #edd9c0;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em; 
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #e0bc90}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+/*Dropdown menu*/
 .sidebar {
     flex-direction: column;
     width: 100%;
     height: 11%;
-    background: #edd9c0;
+    background: white;
     z-index: 999;
     top: 0;
     padding-top: 1.6%;
-    
+    background: #edd9c0;
 }
 
+/*
 .nav-container {
     color: #281d10;
     display: none;
@@ -96,6 +157,7 @@ html {
     width: 100%;
     background: rgba(237, 217, 192, 0.56);
 }
+*/
 
 .sidebar h1 {
     font-size: 2em;
@@ -108,23 +170,11 @@ html {
 ul {
     list-style-type: none;
     padding: 0;
-    text-align: center;
+    text-align: left;
 }
 
 nav ul li {
     margin-bottom: 0.7em;
-}
-
-.fa-level-up {
-    display: none;
-}
-
-@media (min-width: 576px) {
-    
-    .sidebar {
-        padding-bottom: 2%;
-    }
-    
 }
 
 /********************************************* 1st Section (Hero Image)*/
@@ -144,7 +194,7 @@ nav ul li {
     font-size: 1.4em;
 }
 
-@media (min-width: 576px) { ... }
+
 
 /*2nd Section (About Me)*/
 
@@ -160,13 +210,14 @@ nav ul li {
 }
 
 .two h1{
-    text-align: center;
+    text-align: left;
     border-bottom: 2px solid black;
+    font-size: 2em;
 }
 
 .two p {
     font-size: 1em;
-    text-align: center;
+    text-align: left;
     line-height: 1.7em;
 }
 
@@ -174,19 +225,6 @@ nav ul li {
     text-align: left;
 }
 
-@media (min-width: 576px) {
-    
-    .two p {
-        width: 50%;
-        margin: 0 auto;
-        padding-top: 5%;
-    }
-    
-    .two ul li {
-        text-align: center;
-    }
-    
-}
 
 
 /********************************************* 3rd Section (Portfolio)*/
@@ -255,8 +293,63 @@ nav ul li {
 
 /*Media Queries*/
 
-@media only screen 
-    and (min-device-width: 220px){
-        
-}     
+@media (min-width: 576px) {
+    
+    .sidebar {
+        padding-bottom: 2%;
+    }
+    
+    .two div {
+        width: 45%;
+    }
+    
+} 
+
+@media (min-width: 880px) {
+    
+    .sidebar {
+        position: fixed;
+        width: 30%;
+        height: 100%;
+    }
+    
+    .dropdown-content {
+        display: block;
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+        width: 90%;
+        margin-left: 8%;
+        border-left: 2px solid;
+    }
+    
+    .dropdown i {
+        display: none;
+    }
+    
+    .one {
+        height: 100%;
+    }
+    
+    .content {
+        margin-left: 30%;
+        width: 70%;
+    }
+    
+}
+
+@media (min-width: 1050px) {
+    
+    .dropdown button {
+        font-size: 1.3em;
+    }
+    
+    .sidebar {
+        width: 21%;
+    }
+    
+    .content {
+        width: 79%;
+        margin-left: 21%;
+    }
+    
+}
       
