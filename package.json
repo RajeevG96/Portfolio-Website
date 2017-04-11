@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/RajeevG96/Portfolio-Website/issues"
   },
-  "homepage": "https://github.com/RajeevG96/Portfolio-Website#readme"
+  "homepage": "https://github.com/RajeevG96/Portfolio-Website#readme",
+  "dependencies": {
+    "animate.css": "^3.5.2"
+  }
 }
