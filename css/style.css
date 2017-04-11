@@ -80,7 +80,7 @@ html {
 
 /* Dropdown Button */
 .dropbtn {
-    background: #edd9c0;
+    background: #e2c098;
     color: black;
     padding: 16px;
     font-size: 16px;
@@ -113,7 +113,7 @@ html {
 .dropdown-content {
     display: none;
     position: absolute;
-    background: #edd9c0;
+    background: #e2c098;
     width: 100%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 2;
@@ -144,7 +144,7 @@ html {
     z-index: 999;
     top: 0;
     padding-top: 1.6%;
-    background: #edd9c0;
+    background: #e2c098;
 }
 
 
@@ -188,7 +188,7 @@ nav ul li {
 /*2nd Section (About Me)*/
 
 .two {
-    background: #c8d4d5;
+    background: #a9bbbc;
     flex-direction: column;
     
 }
@@ -219,7 +219,7 @@ nav ul li {
 /********************************************* 3rd Section (Portfolio)*/
 
 .three {
-    background: #a8b6bf;
+    background: #7e93a0;
     flex-direction: row;
     flex-wrap: wrap;
 }
