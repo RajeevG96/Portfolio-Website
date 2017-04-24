@@ -371,6 +371,20 @@ nav ul li {
         width: 79%;
         margin-left: 21%;
     }
+	
+		.two {
+			flex-direction: row;
+
+	}
+	
+		.two div {
+			width: 40%;
+			
+	}
+	
+	.about {
+		margin-right: 10%;
+	}
     
 }
       
